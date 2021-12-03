@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=gl dir=LTR>
+<html lang=es dir=LTR>
     <!-- Cabecera oculta del documento web -->
     <head>
         <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
@@ -9,9 +9,9 @@
         <!-- Compatibilidad con Microsoft Explorer -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- Indéxame y sígueme -->
-        <meta name="robots" content="Index, Follow" />
+        <meta name="robots" content="noIndex, noFollow" />
         <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
-        <meta name="description" content="Para permanecer visible en Google debo contener entre 140-160 caracteres" />
+        <meta name="description" content="Sitio web de prueba elaborado en el curso de Confeccion y Publicación de Páginas Web (IFCD0110). Aprende HTML5, CSS/3 y Javascript con nosotros." />
         <!-- Ruta a las hojas de estilos -->
         <link rel="stylesheet" type="text/css" href="/assets/css/application.css" />
         <!-- Ruta al favicon -->
@@ -26,41 +26,84 @@
             gtag('config', 'UA-XXXX-n');
         </script>
         <!-- Título de la pestaña -->
-        <title>Título de la página web</title>
+        <title>IFCD0110 | Inicio</title>
     </head>
 
     <!-- Cuerpo visible del documento web -->
     <body>
         <header>
-            <a href="https://miweb.com">
-                <figure class="logo" style="background-image:url(/assets/svg/logo.svg);"></figure>
-                <h1>Título de la página de inicio</h1>
+            <a href="index.html">
+                <figure>
+                    <img src="images/logo_100.jpg" alt="Logo del sitio web" />
+                </figure>
+                <h1>Proyecto del Curso de Confección y Publicación de Páginas Web</h1>
             </a>
-            <p class="pechado">Slogan del sitio web</p>
+            <p class="pechado">Proyecto web del curso IFCD0110</p>
         </header>
         <!-- Menú de navegación principal del sitio -->
         <nav>
             <h2 class="pechado">Menú principal</h2>
             <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/servicios.html">Servicios</a>
+                <li>Categorías
+                    <ul>
+                        <li>
+                            <a href="categories/html5.html" title="Ir a la página de HTML5">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="categories/css.html" title="Ir a la página de CSS">CSS</a>
+                        </li>
+                        <li>
+                            <a href="categories/js.html" title="Ir a la página de Javascript">Javascript</a>
+                        </li>
+                        <li>
+                            <a href="categories/lorem.html" title="Ir a la página de Lorem Ipsum">Lorem Ipsum</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="pages/nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="pages/contacto.html">Nosotros</a>
+                    <a href="pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
         <!-- Contenido principal de la página web -->
         <main>
             <section>
-                <h2>Esto es una sección de pruebas HTML</h2>
-                <a href="#sidebar-left">Enlace interno al aside</a>
+                <h2>El elemento <em>section</em> en HTML</h2>
+                <article>
+                    <h3>Resumen</h3>
+                    <p>
+                        El elemento de HTML section ("<section></section>") representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. <br />
+                        Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.  
+                    </p>
+                    <p>
+                        Es, por lo tanto, <strong>una etiquéta semántica</strong>. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes. 
+                    </p>
+                </article>
+                <article>
+                    <h3>Notas de uso</h3>
+                    <p>
+                        Si la intención es indicar el contenido de un elemento, el mejor usar el elemento article ("<article></article>").
+                     </p>
+                     <p>
+                         las secciones indican que los artículos que contienen tienen algo común entre ellos, como 
+                     </p>
+                     <ul>
+                         <li>
+                             <strong>Esta sección</strong>que tiene 3 artículos para mostrar contenido sobre el elemento <em>section</em>
+                         </li>
+                         <li>
+                             <strong>La portada de una revista o blog</strong>que contiene varios artículos sobre los contenidos a ofrecer al visitante
+                         </li>
+                         <li>
+                             <strong>La sección siguiente de esta página</strong> que contiene varios artículos sobre <em>Lorem Ipsum</em>
+                         </li>
+                     </ul>
+                </article>
+
+                <a href="#sidebar-left" title="Ir a la barra lateral izquierda">Enlace interno al aside</a>
             </section>
             <section>
                 <h2>Lorem ipsum</h2>
